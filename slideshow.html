@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<script type="text/javascript"> 
+
+var image1 = new Image()
+image1.src="C:/Users/marja/Contacts/Desktop/Website/1.jpg"
+
+var image2 = new Image()
+image2.src="C:/Users/marja/Contacts/Desktop/Website/2.jpg"
+
+var image3 = new Image()
+image3.src="C:/Users/marja/Contacts/Desktop/Website/3.jpg"
+
+var image4 = new Image()
+image4.src="C:/Users/marja/Contacts/Desktop/Website/4.jpg"
+
+var image5 = new Image()
+image5.src="C:/Users/marja/Contacts/Desktop/Website/5.jpg"
+
+var image6 = new Image()
+image6.src="C:/Users/marja/Contacts/Desktop/Website/6.jpg"
+
+var image7 = new Image()
+image7.src="C:/Users/marja/Contacts/Desktop/Website/7.jpg"
+
+var image8 = new Image()
+image8.src="C:/Users/marja/Contacts/Desktop/Website/8.jpg"
+
+</script>
+
+<style> 
+
+body{background-color:#BCC2B5; margin: 0 auto; margin-top: 100px; text-align:center}
+
+</style>
+
+</head>
+
+<body>
+
+<img src="C:/Users/marja/Contacts/Desktop/Website/1.jpg" name="slideshow" alt="imageslideshow">
+<script type="text/javascript"> 
+var numberImage = 1
+function myslide(){
+document.images.slideshow.src=eval("image"+numberImage+".src")
+if(numberImage <= 8 )
+++ numberImage
+else
+numberImage = 1
+setTimeout("myslide()", 4500)
+}
+myslide()
+
+</script>
+
+</body>
+
+</html>
