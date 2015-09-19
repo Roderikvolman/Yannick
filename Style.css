@@ -82,3 +82,19 @@ pre {
 .no-border {
 	border: 0px;
 }
+
+.header{
+    text-align: center;
+}
+
+.header_slideshow{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.body_slideshow {
+    background-color: #BCC2B5;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
